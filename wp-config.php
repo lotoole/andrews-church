@@ -18,22 +18,22 @@
  * @package WordPress
  */
 define( 'WP_DEBUG', true );
-define( 'WP_HOME', 'http://vrsea.dev' );
-define( 'WP_SITEURL', 'http://vrsea.dev' );
+define( 'WP_HOME', 'http://standrews.localhost/' );
+define( 'WP_SITEURL', 'http://standrews.localhost/' );
 
 define( 'GOOGLE_MAPS_API_KEY', '123' );
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'vrse41294970463' );
+define( 'DB_NAME', 'andrews-church' );
 
 /** MySQL database username */
 define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '127.0.0.1' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
