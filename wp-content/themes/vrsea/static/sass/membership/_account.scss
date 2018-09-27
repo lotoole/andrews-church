@@ -1,0 +1,23 @@
+// profile page linked in nav
+.um-profile-nav {
+  background: transparent !important;
+  border-radius: 0px !important;
+  margin-left: 0px !important;
+}
+.um-profile-nav-item i {
+  top: calc(50% - 10px) !important;
+}
+.um-profile-nav-item {
+  color: $green !important;
+}
+.um-profile-nav-item span.title {
+  font-size: 15px !important;
+}
+.um-profile-nav-item.active {
+  background-color: $green !important;
+  color: $green !important;
+}
+// edit account page
+.um-account {
+  padding: 40px 0 !important;
+}

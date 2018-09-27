@@ -1,0 +1,26 @@
+.printable-form {
+  padding: 40px 0 0 0;
+
+  h3.form-title {
+    margin-bottom: 20px;
+    border-bottom: 1px inset $yellow;
+  }
+
+  .disclaimer {
+    display: block;
+    font-style: italic;
+    font-size: 10px;
+    margin: 10px 0 10px 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+}
+
+.suport {
+  text-align: center;
+  background-color: #EBEBEB;
+  padding: 20px 0;
+}

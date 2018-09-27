@@ -1,0 +1,372 @@
+section.home-hero {
+  background: 50% 50% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient( rgba(0,0,0, 0.6), rgba(0,0,0, 0.6) ),url(../images/coverbridge.jpg);
+  p {
+    padding: 200px 0;
+    max-width: 80%;
+    margin: auto;
+    z-index: 3;
+    color: $white;
+  }
+  @include md {
+
+  }
+}
+
+section.home-mission {
+  max-height: 70vh;
+
+  .mission-statement {
+    padding: 25px;
+    background-color: $green;
+    color: $white;
+  }
+
+  .background-image {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1 {
+    color: $white;
+
+    &::after {
+
+    }
+  }
+
+  .btn-primary {
+    background-color: $yellow;
+  }
+
+  @include md {
+    max-height: none;
+
+    .background-image {
+      display: block;
+    }
+  }
+
+}
+
+section.homepage-newsupdates {
+  padding: 25px 0;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    column-count: 2;
+
+    li {
+      break-inside: avoid;
+      margin-bottom: 8px;
+
+      p {
+        display: inline;
+      }
+
+      span {
+        font-weight: $font-weight-bold;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .btn {
+    margin-bottom: 20px;
+  }
+
+  @include md {
+
+    h1 {
+      margin-bottom: 0px;
+    }
+
+    .btn {
+      margin-bottom: 0;
+    }
+  }
+}
+
+section.links-slider {
+  position: relative;
+  .slider {
+    padding: 0 60px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      height: 100px;
+      width: 100px;
+      margin-right: 20px;
+      border: 2px solid $light-grey;
+      border-radius: 50%;
+    }
+  }
+  span {
+    font-weight: $font-weight-bold;
+  }
+  .testimonial-caption {
+    margin-left: 0;
+    text-align: center;
+  }
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: calc(50% - 15px);
+    height: 30px;
+    width: 20px;
+    color: $dark-grey;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+  @include md {
+    .content {
+      flex-direction: row;
+    }
+    .testimonial-caption {
+      margin-left: 120px;
+      text-align: left;
+    }
+  }
+}
+
+section.offerings {
+  padding: 40px 0;
+
+  h1 {
+    text-align: center;
+
+    &::after {
+      content: " ";
+      display: none;
+      width: 550px;
+      height: 2px;
+      margin: 10px auto 0 auto;
+      background-color: $green;
+    }
+  }
+
+  .col-md-4 > div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .btn-primary {
+    white-space: normal;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  p {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  @include md {
+
+    h1::after {
+      display: block;
+    }
+
+    .col-md-4 > div {
+      margin-bottom: 0;
+    }
+
+    p {
+      max-width: none;
+    }
+  }
+}
+
+section.flexible {
+  padding: 40px 0;
+  background-color: $light-grey;
+  .wrap {
+    position: relative;
+    padding: 35px 25px;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    background-color: $white;
+    h1 {
+      margin-bottom: 40px;
+      color: $green;
+    }
+    p {
+      margin: 40px 0;
+      color: $black;
+    }
+  }
+  .newsletter.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    box-shadow: 0 0 0;
+    background-color: $light-grey;
+    .content {
+      height: calc(100% - 160px);
+      background-color: $white;
+      box-shadow: 0 0 5px rgba(0,0,0,0.15);
+      padding: 35px 25px;
+    }
+  }
+  .solo-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    background-color: $green;
+    &:hover {
+      color: darken($cream, 15%) !important;
+      cursor: pointer;
+    }
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      color: $cream;
+    }
+    i {
+      font-size: 50px;
+      margin-right: 20px;
+      color: $cream;
+    }
+    a {
+    font-size: 50px;
+    color: $cream;
+    }
+  }
+  .col-lg-4 {
+    margin-bottom: 40px;
+  }
+  @include md {
+    .subscribe {
+      margin-bottom: 40px;
+    }
+    .col-lg-4 {
+      margin-bottom: inherit;
+    }
+    .wrap {
+      height: 100%;
+    }
+  }
+}
+
+section.call-to-action {
+  padding: 60px 0;
+  background: 50% 50% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .col-md-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    color: $white;
+    margin: 0;
+  }
+}
+section.call-to-action.style-1 {
+  background-image: linear-gradient( rgba(85, 129, 95, 0.8), rgba(85, 129, 95, 0.8) ),url(../images/coverbridge.jpg);
+}
+section.call-to-action.style-2 {
+  background-image: linear-gradient( rgba(253, 204, 50, 0.5), rgba(253, 204, 50, 0.5) ),url(../images/coverbridge.jpg);
+  .col-md-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+  .btn {
+    background-color: $green;
+    &:hover {
+      background-color: darken($green, 15%);
+    }
+  }
+}
+
+
+section.helpful-links {
+  padding: 40px 20px;
+  background-color: $white;
+  h6 {
+    max-width: 100%;
+    margin: 20px auto;
+    font-size: 20px;
+    text-align: center;
+    color: $green;
+  }
+  img {
+    display: block;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    columns: 1;
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+    li {
+      margin: 0 40px 20px 0;
+    }
+    a {
+      color: $black;
+      text-decoration: underline;
+      &:hover {
+        color: darken($black, 25%);
+      }
+    }
+  }
+  @include md {
+    padding: 40px 0;
+    h6 {
+      max-width: 70%;
+    }
+    ul {
+      max-width: 70%;
+    }
+  }
+  @include sm {
+    ul {
+      columns: 2;
+    }
+  }
+}

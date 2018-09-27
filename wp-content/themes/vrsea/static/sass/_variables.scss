@@ -1,0 +1,39 @@
+// Colors
+$white:             #FFFFFF;
+$light-grey:        #EBEBEB;
+$grey:              #808285;
+$dark-grey:         #4A4A4A;
+$black:             #333333;
+
+$green:             #55815F;
+$yellow:            #FDCC32;
+$grey-green:        #5F7A65;
+$red:               #811F18;
+$cream:             #EFE7D8;
+$tan:               #B8AA9B;
+$overlay-blue:      #152130;
+
+
+// Fonts
+$font-weight-regular:   400;
+$font-weight-bold:      700;
+
+// Transitions
+$snappy: cubic-bezier(0.42, 0, 0.05, 0.99);
+
+// Bootstrap Overrides
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$line-height-base:      1.5;
+$body-color:            $black;
+$enable-rounded:        false;
+$brand-primary:         $green;
+
+$btn-padding-x:         20px;
+$btn-padding-y:         10px;

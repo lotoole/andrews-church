@@ -1,0 +1,95 @@
+.faq {
+  padding: 40px 0;
+
+  .row > div:nth-child(2) {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .question {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+  }
+
+  h1 {
+    color: $yellow;
+    margin-bottom: 0;
+  }
+
+  .faq-buttons {
+    margin: 20px 0 0 0;
+
+    .btn {
+      margin: 0 20px 20px 0;
+    }
+  }
+
+  .section-title {
+    color: $black;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .toggle {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+    h3 {
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      color: black;
+      font-weight: normal;
+      &:hover {
+        color: darken($green, 15%);
+      }
+    }
+    span {
+      font-size: 40px;
+      margin-right: 30px;
+      color: $green;
+      &:hover {
+        color: darken($green, 15%);
+      }
+    }
+  }
+  .answer {
+    display: block;
+    height: 0;
+    opacity: 0;
+    transition: height $snappy 0.4s, opacity 0.4s;
+    font-size: 13px;
+    padding: 0 0 10px 60px;
+    &.active {
+      height: 100%;
+      opacity: 1;
+      // padding-bottom: 10px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+  @include md {
+    .answer {
+      // padding: 0;
+      font-size: 15px !important;
+    }
+    .section-title {
+      text-align: left;
+    }
+    .faq-buttons {
+      text-align: center;
+    }
+    h3 {
+      font-size: 20px !important;
+    }
+
+  }
+}
