@@ -25,18 +25,10 @@
     <body <?php body_class(); ?>>
         <?php get_template_part( 'partials/gtm-noscript' ); ?>
         <header>
-          <a class="logo" href="<?php echo site_url( '/' ); ?>">
-              <h1 class="main-header">vrsea</h1>
-              <h3 class="sub-heading">Vermont Retired State Employee Association, INC.</h3>
-          </a>
           <nav class="secondary">
-            <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container' => false ) ); ?>
-            <a class="search-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <h1>The Roman Catholic Communities of Waterbury, Waitsfield and Moretown</h1>
           </nav>
 
-          <nav class="search">
-              <?php get_search_form(); ?>
-          </nav>
             <nav class="primary">
                 <div class="primary-nav-wrap">
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>

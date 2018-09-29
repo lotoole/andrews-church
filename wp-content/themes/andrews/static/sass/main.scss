@@ -7,7 +7,7 @@
 @import 'bootstrap/scss/utilities';
 @import 'bootstrap/scss/forms';
 @import 'bootstrap/scss/buttons';
-@import 'slick.js/slick/slick.scss';
+// @import 'slick.js/slick/slick.scss';
 @import 'magnific-popup/src/css/main';
 
 html,
@@ -27,8 +27,6 @@ img {
 iframe {
     display: block;
     margin-bottom: 1rem;
-}
-
 }
 
 // Custom Column Gutters
