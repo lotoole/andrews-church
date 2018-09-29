@@ -14,10 +14,11 @@ section.churches {
 }
 
 section.contact-info {
-  
+  padding: 40px 0;
 }
 
 section.bulliten-promo {
+  padding: 40px 0;
   background-color: $grey;
 
   .btn {
@@ -27,5 +28,33 @@ section.bulliten-promo {
     &:hover {
       background-color: darken($dark-grey, 18%);
     }
+  }
+}
+
+section.block-columns {
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .block {
+    width: 100%;
+    margin-bottom: 2px;
+    padding: 50px;
+    background-color: $light-grey;
+  }
+
+  .block-content {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 125px;
+    max-height: 85px;
+  }
+
+  i {
+    font-size: 80px;
   }
 }
