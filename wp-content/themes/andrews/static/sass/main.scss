@@ -11,6 +11,7 @@
 @import 'magnific-popup/src/css/main';
 
 @import 'header';
+@import 'home';
 
 html,
 body {
@@ -29,6 +30,10 @@ img {
 iframe {
     display: block;
     margin-bottom: 1rem;
+}
+
+section {
+  padding: 40px 0;
 }
 
 // Custom Column Gutters

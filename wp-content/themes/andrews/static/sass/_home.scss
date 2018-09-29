@@ -1,0 +1,18 @@
+section.churches {
+
+  .church-info {
+    
+    .address {
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  @include md {
+
+  }
+}
