@@ -56,4 +56,17 @@ get_header();
   </div>
 </section>
 
+<section class="bulliten-promo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Weekday and Holiday Mass</h1>
+      </div>
+      <div class="col-md-4" style="text-align: right;">
+        <a href="#" class="btn btn-lg">Mass Information</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php get_footer(); ?>

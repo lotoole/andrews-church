@@ -1,7 +1,7 @@
 section.churches {
 
   .church-info {
-    
+
     .address {
       margin: 0;
       padding: 0;
@@ -11,8 +11,17 @@ section.churches {
       display: block;
     }
   }
+}
 
-  @include md {
+section.bulliten-promo {
+  background-color: $grey;
 
+  .btn {
+    background-color: $dark-grey;
+    color: $white;
+
+    &:hover {
+      background-color: darken($dark-grey, 18%);
+    }
   }
 }
