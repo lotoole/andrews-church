@@ -17,14 +17,13 @@
  *
  * @package WordPress
  */
-define( 'WP_DEBUG', true );
-define( 'WP_HOME', 'http://standrews.localhost/' );
-define( 'WP_SITEURL', 'http://standrews.localhost/' );
+define( 'WP_HOME', 'http://andrews.localhost/' );
+define( 'WP_SITEURL', 'http://andrews.localhost/' );
 
 define( 'GOOGLE_MAPS_API_KEY', '123' );
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'andrews-church' );
+define( 'DB_NAME', 'andrews' );
 
 /** MySQL database username */
 define( 'DB_USER', 'root' );

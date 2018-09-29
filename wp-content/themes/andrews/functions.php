@@ -1,9 +1,5 @@
 <?php
 
-// Register Post Types, Taxonomies, Shortcodes
-require_once( 'includes/galleries.php' );
-require_once( 'includes/share.php' );
-
 new andrews();
 
 class andrews {
