@@ -56,6 +56,28 @@ get_header();
   </div>
 </section>
 
+<section class="contact-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Contact Information</h2>
+        C/O 109 South Main Street<br>
+        Waterbury, VT, 05676<br>
+        (802) 244-7734<br>
+        (802) 244-7934 (FAX)<br>
+        <a href="mailto:">Pastor</a>
+        <a href="mailto:">Parish Office</a>
+      </div>
+      <div class="col-md-6">
+        <h2>Confessions</h2>
+        <p>	Saturday 3:15 to 3:45 PM at St. Andrew, Waterbury, and by appointment. Call the rectory at the phone number above.</p>
+        <h2>The Sacraments</h2>
+        <p>Inquiries concerning Baptism, First Communion, Confirmation, or Marriage should be made to Fr. Mercure at the address and phone number above.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="bulliten-promo">
   <div class="container">
     <div class="row">
