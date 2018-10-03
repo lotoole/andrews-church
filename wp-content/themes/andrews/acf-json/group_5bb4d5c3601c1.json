@@ -1,11 +1,11 @@
 {
-    "key": "group_59692309ae72a",
-    "title": "By Laws",
+    "key": "group_5bb4d5c3601c1",
+    "title": "Home",
     "fields": [
         {
-            "key": "field_596923125e8bd",
-            "label": "Law",
-            "name": "law",
+            "key": "field_5bb4d6207c75b",
+            "label": "Churches",
+            "name": "churches",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -16,15 +16,39 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": 0,
-            "max": 0,
+            "min": 3,
+            "max": 3,
             "layout": "row",
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_596923495e8be",
-                    "label": "Article Number",
-                    "name": "article_number",
+                    "key": "field_5bb4d64b7c75c",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5bb4d65b7c75d",
+                    "label": "Name",
+                    "name": "name",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -41,10 +65,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_596923555e8bf",
-                    "label": "Law Sub Heading",
-                    "name": "law_sub_heading",
-                    "type": "text",
+                    "key": "field_5bb4d6687c75e",
+                    "label": "Address",
+                    "name": "address",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -54,15 +78,15 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 },
                 {
-                    "key": "field_5969235c5e8c0",
-                    "label": "Content",
-                    "name": "content",
+                    "key": "field_5bb4d67c7c75f",
+                    "label": "Mass Dates",
+                    "name": "mass_dates",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -86,7 +110,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "bylaws.php"
+                "value": "page-home.php"
             }
         ]
     ],
@@ -98,5 +122,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1500062937
+    "modified": 1538578070
 }

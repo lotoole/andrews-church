@@ -1,6 +1,6 @@
 <?php
 
-
+//Template Name: Homepage
 get_header();
 
 ?>
@@ -8,7 +8,24 @@ get_header();
 <section class="churches">
   <div class="container">
     <div class="row">
+      <?php if( have_rows('churches') ): while ( have_rows('churches') ) : the_row();
+            $image = get_sub_field('image');
+      ?>
       <div class="col-md-4">
+        <div class="church-info">
+          <img src="<?php echo $image['url']; ?>" alt="">
+          <div class="content">
+            <h4><?php the_sub_field('name') ?></h4>
+            <p class="address">
+              <?php the_sub_field('address'); ?>
+            </p>
+            <span style="font-weight: bold;">Weekend Masses</span>
+            <?php the_sub_field('mass_dates'); ?>
+          </div>
+        </div>
+      </div>
+      <?php endwhile; endif; ?>
+      <!-- <div class="col-md-4">
         <div class="church-info">
           <img src="https://fillmurray.com/g/300/200" alt="">
           <div class="content">
@@ -52,7 +69,7 @@ get_header();
             <span>Date 2</span>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
