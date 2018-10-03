@@ -69,16 +69,11 @@ class andrews {
     }
 
     function action_enqueue_scripts() {
-      //include library scripts
-      wp_enqueue_script( 'jquery', get_stylesheet_directory_uri() . '/static/node_modules/jquery/dist/jquery.min.js', false, $this->version, true );
-      wp_enqueue_script( 'match', get_stylesheet_directory_uri() . '/static/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js', false, $this->version, true );
-      wp_enqueue_script( 'boot', get_stylesheet_directory_uri() . '/static/node_modules/bootstrap/dist/js/bootstrap.min.js', false, $this->version, true );
-      wp_enqueue_script( 'magnific', get_stylesheet_directory_uri() . '/static/node_modules/magnific-popup/dist/jquery.magnific-popup.min.js', false, $this->version, true );
         // Header
-        wp_enqueue_script( 'head', get_stylesheet_directory_uri() . '/static/js/head.js', false, $this->version, false );
+        wp_enqueue_script( 'head', get_stylesheet_directory_uri() . '/static/js/head.min.js', false, $this->version, false );
 
         // Footer
-        wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/static/js/main.js', false, $this->version, true );
+        wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/static/js/main.min.js', false, $this->version, true );
 
         $data = array(
             'ajaxurl' => admin_url( 'admin-ajax.php' ),
