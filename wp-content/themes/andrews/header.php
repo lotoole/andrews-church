@@ -26,7 +26,7 @@
         <?php get_template_part( 'partials/gtm-noscript' ); ?>
         <header>
           <nav class="secondary">
-            <h1>The Roman Catholic Communities of Waterbury, Waitsfield and Moretown</h1>
+            <h2>The Roman Catholic Communities of Waterbury, Waitsfield and Moretown</h2>
           </nav>
 
             <nav class="primary">

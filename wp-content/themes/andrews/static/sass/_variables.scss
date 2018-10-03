@@ -4,14 +4,12 @@ $light-grey:        #EBEBEB;
 $grey:              #808285;
 $dark-grey:         #4A4A4A;
 $black:             #333333;
-
-$green:             #55815F;
-$yellow:            #FDCC32;
-$grey-green:        #5F7A65;
-$red:               #811F18;
 $cream:             #EFE7D8;
-$tan:               #B8AA9B;
-$overlay-blue:      #152130;
+
+$screen:            #C5C1C0;
+$steel:             #0A1612;
+$denim:             #1A2930;
+$marigold:          #F7CE3E;
 
 
 // Fonts
@@ -33,7 +31,7 @@ $grid-breakpoints: (
 $line-height-base:      1.5;
 $body-color:            $black;
 $enable-rounded:        false;
-$brand-primary:         $green;
+$brand-primary:         $denim;
 
 $btn-padding-x:         20px;
 $btn-padding-y:         10px;
