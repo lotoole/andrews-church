@@ -1,4 +1,4 @@
-/* global window, console, $, Waypoint, bodymovin, twttr, google, Modernizr, jquery-ui */
+/* global window, console, jQuery, Waypoint, bodymovin, twttr, google */
 
 function debounce( fn, threshold ) {
   var timeout;
@@ -43,11 +43,11 @@ function getRandomIntInclusive(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// function popupwindow(url, title, w, h) {
-//     var x = window.outerWidth / 2 + window.screenX - (w / 2),
-//         y = window.outerHeight / 2 + window.screenY - (h / 2);
-//     return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + y + ', left=' + x);
-// }
+function popupwindow(url, title, w, h) {
+    var x = window.outerWidth / 2 + window.screenX - (w / 2),
+        y = window.outerHeight / 2 + window.screenY - (h / 2);
+    return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + y + ', left=' + x);
+}
 
 function calculateDistance(lat1, lon1, lat2, lon2, unit) {
     var radlat1 = Math.PI * lat1/180,
@@ -66,7 +66,15 @@ function calculateDistance(lat1, lon1, lat2, lon2, unit) {
     return dist;
 }
 
-var andrews = andrews || {};
+var andrews = andrews || {},
+    $ = $ || jQuery;
+
+    andrews.mq = {
+        'sm': '(min-width: 576px)',
+        'md': '(min-width: 768px)',
+        'lg': '(min-width: 992px)',
+        'xl': '(min-width: 1200px)'
+    };
 
 andrews.init_mobile_nav = function () {
     var toggle = $('.mobile-nav-toggle'),

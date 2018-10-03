@@ -159,3 +159,40 @@ section.divided-columns {
     }
   }
 }
+
+
+.magnific-form {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 10px;
+  background-color: white;
+
+  h1 {
+    color: $steel;
+  }
+
+  .btn-primary {
+    background-color: $marigold;
+    color: $white;
+    border: none;
+  }
+
+  #message {
+    width: 100%;
+  }
+
+  .person {
+    color: $yellow;
+    font-style: italic;
+    font-size: 25px;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  @include md {
+    padding: 40px;
+  }
+}
