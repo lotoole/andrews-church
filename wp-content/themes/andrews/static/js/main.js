@@ -43,11 +43,11 @@ function getRandomIntInclusive(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function popupwindow(url, title, w, h) {
-    var x = window.outerWidth / 2 + window.screenX - (w / 2),
-        y = window.outerHeight / 2 + window.screenY - (h / 2);
-    return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + y + ', left=' + x);
-}
+// function popupwindow(url, title, w, h) {
+//     var x = window.outerWidth / 2 + window.screenX - (w / 2),
+//         y = window.outerHeight / 2 + window.screenY - (h / 2);
+//     return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + y + ', left=' + x);
+// }
 
 function calculateDistance(lat1, lon1, lat2, lon2, unit) {
     var radlat1 = Math.PI * lat1/180,
@@ -105,34 +105,6 @@ andrews.init_mobile_nav = function () {
     });
 };
 
-andrews.init_smooth_scroll = function () {
-  $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $('a').on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== '') {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-};
-
-
 
 andrews.init_matchHeight = function () {
   $(function() {
@@ -144,6 +116,23 @@ andrews.init_matchHeight = function () {
   });
 };
 
+andrews.init_cotact_form = function () {
+  $('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+};
 
 
 andrews.mq = {
@@ -155,6 +144,6 @@ andrews.mq = {
 
 $(document).ready(function () {
   andrews.init_mobile_nav();
-  andrews.init_smooth_scroll();
   andrews.init_matchHeight();
+  andrews.init_cotact_form();
 });

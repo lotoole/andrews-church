@@ -73,13 +73,13 @@ gulp.task('jshint', function () {
 
 gulp.task('js', function () {
     var head = [
-        './node_modules/picturefill/dist/picturefill.min.js',
+        // './node_modules/picturefill/dist/picturefill.min.js',
         './js/head.js'
     ];
 
     var main = [
         // Bodymovin Animations
-        './js/animations.js',
+        // './js/animations.js',
 
         // Custom
         './js/file.js',
