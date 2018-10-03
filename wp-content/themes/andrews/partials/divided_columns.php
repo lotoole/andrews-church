@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <?php if ( $columns = get_sub_field( 'columns' ) ) : foreach ( $columns as $column ) : ?>
-            <div class="col-md-<?php echo 12 / count($columns); ?> d-flex flex-column justify-content-center">
+            <div class="col-md-<?php echo 12 / count($columns); ?> d-flex flex-column justify-content-top">
                 <?php echo $column['content']; ?>
             </div>
             <?php endforeach; endif; ?>

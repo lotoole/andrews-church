@@ -26,10 +26,6 @@ class andrews {
         add_action( 'admin_init',                   array( $this, 'add_editor_styles' ) );
         add_action( 'init',                         array( $this, 'action_register_nav_menus' ) );
         add_action( 'init',                         array( $this, 'action_acf_add_options_page' ) );
-        add_action( 'init',                         array( $this, 'register_post_type_board_trustees' ) );
-        add_action( 'init',                         array( $this, 'register_post_type_meeting_minutes' ) );
-        add_action( 'init',                         array( $this, 'register_post_type_newsletter' ) );
-        add_action( 'init',                         array( $this, 'register_post_type_news_updates' ) );
         add_action( 'acf/init',                     array( $this, 'action_acf_init' ) );
         add_action( 'wp_enqueue_scripts',           array( $this, 'action_enqueue_scripts' ) );
         add_action( 'wp_enqueue_scripts',           array( $this, 'action_enqueue_styles' ), 20 );
@@ -66,98 +62,6 @@ class andrews {
             acf_add_options_page();
         }
     }
-
-    function register_post_type_board_trustees() {
-       $labels = array(
-           'name'                => 'Board Trustees',
-           'singular_name'       => 'Board Member',
-       );
-
-       $args = array(
-           'label'               => 'board_member',
-           'labels'              => $labels,
-           'supports'            => array( 'title', 'editor', 'thumbnail' ),
-           'hierarchical'        => false,
-           'public'              => true,
-           'show_ui'             => true,
-           'show_in_menu'        => true,
-           'menu_position'       => 10,
-           'menu_icon'           => 'dashicons-admin-users',
-           'has_archive'         => false,
-           'capability_type'     => 'page',
-       );
-
-       register_post_type( 'board_member', $args );
-   }
-
-  function register_post_type_meeting_minutes() {
-     $labels = array(
-         'name'                => 'Meeting Minutes',
-         'singular_name'       => 'Meeting',
-     );
-
-     $args = array(
-         'label'               => 'meeting_minutes',
-         'labels'              => $labels,
-         'supports'            => array( 'title', 'editor', 'thumbnail' ),
-         'hierarchical'        => false,
-         'public'              => true,
-         'show_ui'             => true,
-         'show_in_menu'        => true,
-         'menu_position'       => 10,
-         'menu_icon'           => 'dashicons-welcome-write-blog',
-         'has_archive'         => false,
-         'capability_type'     => 'page',
-     );
-
-     register_post_type( 'meeting_minutes', $args );
- }
-
- function register_post_type_news_updates() {
-    $labels = array(
-        'name'                => 'News Updates',
-        'singular_name'       => 'News Update',
-    );
-
-    $args = array(
-        'label'               => 'news_updates',
-        'labels'              => $labels,
-        'supports'            => array( 'title', 'editor', 'thumbnail' ),
-        'hierarchical'        => false,
-        'public'              => true,
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'menu_position'       => 10,
-        'menu_icon'           => 'dashicons-welcome-write-blog',
-        'has_archive'         => false,
-        'capability_type'     => 'page',
-    );
-
-    register_post_type( 'news_updates', $args );
-}
-
- function register_post_type_newsletter() {
-    $labels = array(
-        'name'                => 'Newsletter',
-        'singular_name'       => 'newsletter',
-    );
-
-    $args = array(
-        'label'               => 'newsletter',
-        'labels'              => $labels,
-        'supports'            => array( 'title', 'editor', 'thumbnail' ),
-        'hierarchical'        => false,
-        'public'              => true,
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'menu_position'       => 10,
-        'menu_icon'           => 'dashicons-format-aside',
-        'has_archive'         => false,
-        'capability_type'     => 'page',
-    );
-
-    register_post_type( 'newsletter', $args );
-}
 
 
     function action_acf_init() {
