@@ -14,19 +14,11 @@ get_header();
   </div>
 </section>
 
-<section class="church-gallery">
+<section class="gen-content">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h3></h3>
-      </div>
-      <div class="col-md-12">
-
-      </div>
-      <div class="col-md-12">
-
-      </div>
-    </div>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <?php the_content(); ?>
+    <?php endwhile; endif; ?>
   </div>
 </section>
 
