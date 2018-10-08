@@ -58,18 +58,14 @@ get_header();
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">St. Andrew Parish</th>
-            <td>$1761</td>
-            <td>$15</td>
-            <td>$357</td>
-          </tr>
-          <tr>
-            <th scope="row">Our Lady of the Snows/Saint Patrick Parish</th>
-            <td>$1177</td>
-            <td></td>
-            <td></td>
-          </tr>
+          <?php if( have_rows('collections') ): while ( have_rows('collections') ) : the_row(); ?>
+            <tr>
+              <th scope="row"><?php the_sub_field('parish'); ?></th>
+              <td><?php the_sub_field('offertory'); ?></td>
+              <td><?php the_sub_field('insurance'); ?></td>
+              <td><?php the_sub_field('fuel'); ?></td>
+            </tr>
+          <?php endwhile; endif; ?>
         </tbody>
       </table>
     </div>
@@ -77,96 +73,6 @@ get_header();
       <h1 style="margin-top: 40px;">Contributing to Your Parish On-Line</h1>
       <p>With assistance from the Diocese of Burlington, members of our parishes may now make weekly parish offertory contributions on-line via a <a href="https://www.myowngiving.com/Default.aspx?cid=540" target="_blank">secure website</a>. Since members of Our Lady of the Snows/St. Patrick Parish have expressed an interest in on-line giving, we are making this option available to them first.</p>
     </div>
-
-
-
-
-    <!--
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Liturgy Schedule for This Week</h1><br>
-      </div>
-      <div class="col-md-12">
-        <table class="table table-hover">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Day</th>
-              <th scope="col">Month</th>
-              <th scope="col">Date</th>
-              <th scope="col">Time</th>
-              <th scope="col">Church</th>
-              <th scope="col">Intention</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>October</td>
-              <td>9</td>
-              <td>8:00 am</td>
-              <td>St. Andrew Church</td>
-              <td>Mass</td>
-            </tr>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>October</td>
-              <td>9</td>
-              <td>8:00 am</td>
-              <td>St. Andrew Church</td>
-              <td>Mass</td>
-            </tr>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>October</td>
-              <td>9</td>
-              <td>8:00 am</td>
-              <td>St. Andrew Church</td>
-              <td>Mass</td>
-            </tr>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>October</td>
-              <td>9</td>
-              <td>8:00 am</td>
-              <td>St. Andrew Church</td>
-              <td>Mass</td>
-            </tr>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>October</td>
-              <td>9</td>
-              <td>8:00 am</td>
-              <td>St. Andrew Church</td>
-              <td>Mass</td>
-            </tr>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>October</td>
-              <td>9</td>
-              <td>8:00 am</td>
-              <td>St. Andrew Church</td>
-              <td>Mass</td>
-            </tr>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>October</td>
-              <td>9</td>
-              <td>8:00 am</td>
-              <td>St. Andrew Church</td>
-              <td>Mass</td>
-            </tr>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>October</td>
-              <td>9</td>
-              <td>8:00 am</td>
-              <td>St. Andrew Church</td>
-              <td>Mass</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div> -->
   </div>
 </section>
 
