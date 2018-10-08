@@ -414,6 +414,94 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5bbbd6a59f780": {
+                    "key": "5bbbd6a59f780",
+                    "name": "churches_links",
+                    "label": "Churches Links",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bbbd75571854",
+                            "label": "Church Name",
+                            "name": "church_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5bbbd6e39f781",
+                            "label": "Single Link",
+                            "name": "single_link",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5bbbd6f89f782",
+                                    "label": "Link Text",
+                                    "name": "link_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5bbbd6fe9f783",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "page_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "allow_archives": 1,
+                                    "multiple": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -426,42 +514,42 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "about.php"
+                "value": "page-churches.php"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "bylaws.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "faq.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "medical-questions.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "meeting-minutes.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-board-trustees.php"
+                "value": "default"
             }
         ],
         [
@@ -482,28 +570,28 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "contact.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "membership.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "membership.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "newsletter-archive.php"
+                "value": "default"
             }
         ]
     ],
@@ -515,5 +603,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1502723879
+    "modified": 1539037481
 }

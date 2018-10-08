@@ -23,10 +23,11 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+      <div class="whole-site-wrapper">
         <?php get_template_part( 'partials/gtm-noscript' ); ?>
         <header>
           <nav class="secondary">
-            <a class="main-title" href="<?php echo esc_url( home_url( '/' ) ); ?>"><h2>The Roman Catholic Communities of Waterbury, Waitsfield and Moretown</h2></a>            
+            <a class="main-title" href="<?php echo esc_url( home_url( '/' ) ); ?>"><h2>The Roman Catholic Communities of Waterbury, Waitsfield and Moretown</h2></a>
           </nav>
             <nav class="primary">
                 <div class="primary-nav-wrap">

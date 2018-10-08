@@ -18,30 +18,18 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <h6>General</h6>
         <p><a href="">A Short History of Catholic Parishes in Waterbury and the Mad River Valley</a></p>
       </div>
-      <div class="col-md-6">
-        <div class="content">
-          <h6>Saint Andrews Church</h6>
-          <ul>
-            <li><a href="">Pictures of Saint Andrew Church</a></li>
-            <li><a href="">Pictures of Saint Andrew Church</a></li>
-            <li><a href="">Pictures of Saint Andrew Church</a></li>
-            <li><a href="">Pictures of Saint Andrew Church</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="content">
-          <h6>Our Lady of the Snows and Saint Patrick Parish</h6>
-          <ul>
-            <li><a href="">Pictures of Saint Andrew Church</a></li>
-            <li><a href="">Pictures of Saint Andrew Church</a></li>
-            <li><a href="">Pictures of Saint Andrew Church</a></li>
-            <li><a href="">Pictures of Saint Andrew Church</a></li>
-          </ul>
-        </div>
-      </div>
+      <?php
+
+      if ( have_rows( 'flexible_content' ) ) {
+          while ( have_rows( 'flexible_content' ) ) {
+              the_row();
+              get_template_part( 'partials/' . get_row_layout() );
+          }
+      }
+      ?>
     </div>
   </div>
 </section>
