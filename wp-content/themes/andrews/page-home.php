@@ -10,10 +10,11 @@ get_header();
     <div class="row">
       <?php if( have_rows('churches') ): while ( have_rows('churches') ) : the_row();
             $image = get_sub_field('image');
+            $size = 'square';
       ?>
       <div class="col-md-4">
         <div class="church-info">
-          <img src="<?php echo $image['url']; ?>" alt="">
+          <?php echo wp_get_attachment_image( $image, $size ); ?>
           <div class="content">
             <h4><?php the_sub_field('name') ?></h4>
             <p class="address">
@@ -25,51 +26,6 @@ get_header();
         </div>
       </div>
       <?php endwhile; endif; ?>
-      <!-- <div class="col-md-4">
-        <div class="church-info">
-          <img src="https://fillmurray.com/g/300/200" alt="">
-          <div class="content">
-            <h4>Saint Andrew Church</h4>
-            <p class="address">
-              109 South Main Street <br>
-              Route 100, Waterbury
-            </p>
-            <span style="font-weight: bold;">Weekend Masses</span>
-            <span>Date 1</span>
-            <span>Date 2</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="church-info">
-          <img src="https://fillmurray.com/g/300/200" alt="">
-          <div class="content">
-            <h4>Saint Andrew Church</h4>
-            <p class="address">
-              109 South Main Street <br>
-              Route 100, Waterbury
-            </p>
-            <span style="font-weight: bold;">Weekend Masses</span>
-            <span>Date 1</span>
-            <span>Date 2</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="church-info">
-          <img src="https://fillmurray.com/g/300/200" alt="">
-          <div class="content">
-            <h4>Saint Andrew Church</h4>
-            <p class="address">
-              109 South Main Street <br>
-              Route 100, Waterbury
-            </p>
-            <span style="font-weight: bold;">Weekend Masses</span>
-            <span>Date 1</span>
-            <span>Date 2</span>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
 </section>
