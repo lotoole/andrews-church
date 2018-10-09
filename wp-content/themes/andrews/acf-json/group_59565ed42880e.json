@@ -521,7 +521,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "default"
+                "value": "education-landing.php"
             }
         ],
         [
@@ -603,5 +603,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1539037481
+    "modified": 1539117961
 }

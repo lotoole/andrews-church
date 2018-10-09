@@ -108,7 +108,7 @@ nav.mobile {
   width: 100%;
   height: 0;
   overflow: hidden;
-  z-index: 2;
+  z-index: 30;
   transition: height $snappy 0.4s, opacity 0.4s;
   background-color: $black;
   .mobile-track {
