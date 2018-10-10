@@ -18,6 +18,7 @@
 @import 'links';
 @import 'churches';
 @import 'footer';
+@import 'education';
 
 html,
 body {
@@ -98,7 +99,11 @@ a {
   }
 }
 
-#regForm {
+.reg-form-wrap .wpcf7-form {
+  margin: auto;
+  display: block;
+  max-width: 800px;
+
   p {
     font-weight: bold;
   }
