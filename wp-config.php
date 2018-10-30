@@ -20,6 +20,8 @@
 define( 'WP_HOME', 'http://andrews.localhost/' );
 define( 'WP_SITEURL', 'http://andrews.localhost/' );
 
+define('FS_METHOD', 'direct');
+
 define( 'GOOGLE_MAPS_API_KEY', '123' );
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
