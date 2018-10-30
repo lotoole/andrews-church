@@ -19,7 +19,7 @@ get_header();
     <div class="row">
       <div class="col-md-12">
         <h6>General</h6>
-        <p><a href="">A Short History of Catholic Parishes in Waterbury and the Mad River Valley</a></p>
+        <p><a href="http://andrews.localhost/churches/history-of-catholic-parishes/">A Short History of Catholic Parishes in Waterbury and the Mad River Valley</a></p>
       </div>
       <?php
 
