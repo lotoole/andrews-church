@@ -21,31 +21,33 @@ get_header();
         <h1>Liturgy Schedule for This Week</h1><br>
       </div>
       <div class="col-md-12">
-        <table class="table table-hover">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Day</th>
-              <th scope="col">Month</th>
-              <th scope="col">Date</th>
-              <th scope="col">Time</th>
-              <th scope="col">Church</th>
-              <th scope="col">Intention</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php if( have_rows('bulletin') ): while ( have_rows('bulletin') ) : the_row(); ?>
-            <tr>
-              <th scope="row"><?php the_sub_field('day'); ?></th>
-              <td><?php the_sub_field('month'); ?></td>
-              <td><?php the_sub_field('date'); ?></td>
-              <td><?php the_sub_field('time'); ?></td>
-              <td><?php the_sub_field('church'); ?></td>
-              <td><?php the_sub_field('intention'); ?></td>
-            </tr>
-            <?php endwhile; endif; ?>
-          </tbody>
-        </table>
-    </div>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Month</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Church</th>
+                <th scope="col">Intention</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php if( have_rows('bulletin') ): while ( have_rows('bulletin') ) : the_row(); ?>
+              <tr>
+                <th scope="row"><?php the_sub_field('day'); ?></th>
+                <td><?php the_sub_field('month'); ?></td>
+                <td><?php the_sub_field('date'); ?></td>
+                <td><?php the_sub_field('time'); ?></td>
+                <td><?php the_sub_field('church'); ?></td>
+                <td><?php the_sub_field('intention'); ?></td>
+              </tr>
+              <?php endwhile; endif; ?>
+            </tbody>
+          </table>
+        </div>
+      </div>
     <div class="col-md-12">
       <h1 style="margin-top: 40px;">Last Weekends Collections</h1>
       <table class="table table-hover">

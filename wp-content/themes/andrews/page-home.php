@@ -42,14 +42,14 @@ get_header();
       </div>
       <div class="col-md-6">
         <div class="general content">
-          <?php if( have_rows('general_information') ): while ( have_rows('general_information') ) : the_row(); ?>
-            <h2><?php the_sub_field('title'); ?><h2>
+          <?php if( have_rows('general_content') ): while ( have_rows('general_content') ) : the_row(); ?>
+            <h2><?php the_sub_field('title'); ?></h2>
               <p><?php the_sub_field('content'); ?></p>
           <?php endwhile; endif; ?>
-          <h2>Confessions</h2>
+          <!-- <h2>Confessions</h2>
           <p>	Saturday 3:15 to 3:45 PM at St. Andrew, Waterbury, and by appointment. Call the rectory at the phone number above.</p>
           <h2>The Sacraments</h2>
-          <p>Inquiries concerning Baptism, First Communion, Confirmation, or Marriage should be made to Fr. Mercure at the address and phone number above.</p>
+          <p>Inquiries concerning Baptism, First Communion, Confirmation, or Marriage should be made to Fr. Mercure at the address and phone number above.</p> -->
         </div>
       </div>
     </div>

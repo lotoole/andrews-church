@@ -34,8 +34,18 @@ nav.secondary {
     height: 30px;
 
     h2 {
-      text-align: center;
+      display: block;
+      font-size: 15px;
+      max-width: 300px;
+      margin: auto;
     }
+  @include md {
+
+    h2 {
+      max-width: none;
+      font-size: 25px;
+    }
+  }
 }
 
 nav.primary {

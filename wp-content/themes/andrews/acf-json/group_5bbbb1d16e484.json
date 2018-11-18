@@ -61,7 +61,7 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "row",
+            "layout": "table",
             "button_label": "",
             "sub_fields": [
                 {
@@ -295,5 +295,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1539028665
+    "modified": 1540930586
 }
