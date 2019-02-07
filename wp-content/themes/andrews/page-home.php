@@ -59,10 +59,10 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1>Weekday and Holiday Mass</h1>
+        <h1>Welcome to the Catholic Communities of Waterbury, Waitsfield and Moretown, Vermont</h1>
       </div>
       <div class="col-md-4">
-        <a href="#contactForm" class="btn btn-lg">Mass Information</a>
+        <a href="https://www.rccwwm.org/?page_id=18" class="btn btn-lg">Liturgy Schedule</a>
       </div>
     </div>
   </div>
